@@ -1,14 +1,8 @@
---Cleaning data in SQL
-
 --Taking an initial look at the data set
 SELECT * 
 FROM dbo.Nashville_Housing
 
 --Looking at the SaleDate column, it has a time stamp after the date which I want to get rid of. Adding a new column saledate which replaces the exisitng column
---UPDATE Nashville_Housing
---SET SaleDate = CONVERT(Date,SaleDate) -- This wasn't working for some reason
-
---select SaleDate from dbo.Nashville_Housing
 
 --Adding a new column which will hold the converted date type 
 ALTER TABLE Nashville_Housing
